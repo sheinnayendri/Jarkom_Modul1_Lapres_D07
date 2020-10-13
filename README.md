@@ -134,6 +134,7 @@ clue: "25 50 44 46"
 -	Ubah tipe menjadi ```Raw```, kemudian ```save as``` **file.pdf** (nama bebas, tipe file: PDF). Simpan di direktori yang diinginkan.
 
 ![image](https://user-images.githubusercontent.com/48936125/95889961-57e41200-0dad-11eb-9b6b-18ad5fa30846.png)
+
 ![image](https://user-images.githubusercontent.com/48936125/95889970-5a466c00-0dad-11eb-90bf-fb3222767ab9.png)
 
 -	Setelah dibuka, file tersebut berupa UU RI, seperti pada screenshot terlampir.
@@ -142,3 +143,40 @@ clue: "25 50 44 46"
 #
 
 ### Soal11
+11.	Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+-	Filter command: ```port 21```.
+
+![image](https://user-images.githubusercontent.com/48936125/95891566-73501c80-0daf-11eb-9f90-76da15e632a1.png)
+#
+
+### Soal12
+12.	Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
+-	Filter command: ```src port 80```.
+
+![image](https://user-images.githubusercontent.com/48936125/95891907-eeb1ce00-0daf-11eb-9a07-324855f3ee52.png)
+#
+
+### Soal13
+13.	Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+-	Filter command: ```dst port 443```.
+
+![image](https://user-images.githubusercontent.com/48936125/95891993-08531580-0db0-11eb-828a-5ec540f2df0b.png)
+#
+
+### Soal14
+14.	Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+-	Untuk mencari ip kami, menggunakan command prompt, kemudian mengetikkan command ```ip config```. Dari situ, kami temukan bahwa ip kami adalah ```192.168.1.106```.
+-	Sehingga untuk mengambil paket yang berasal dari ip kami, menggunakan filter command ```ip.src == 192.168.1.106```.
+
+![image](https://user-images.githubusercontent.com/48936125/95892067-2456b700-0db0-11eb-8c8c-ab1fe5735677.png)
+#
+
+### Soal15
+15.	Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
+-	Pertama-tama untuk mencari IP addres monta.if.its.ac.id, kami menggunakan filter command ```http contains “monta.if.its.ac.id”```, dan ditemukan IP address-nya adalah ```103.94.190.11```.
+-	Kemudian untuk mengambil paket yang tujuannya ke monta.if.its.ac.id, kami menggunakan filter command ```ip.dst == 103.94.190.11```, di mana IP address tersebut merupakan IP address monta.if.its.ac.id yang tadi kami cari.
+
+![image](https://user-images.githubusercontent.com/48936125/95892175-4f410b00-0db0-11eb-9bde-f92c0c4383c2.png)
+
+![image](https://user-images.githubusercontent.com/48936125/95892178-510ace80-0db0-11eb-86aa-9d7d1050195e.png)
+#
