@@ -26,9 +26,12 @@ Laporan Resmi Modul 1 Praktikum Jaringan Komputer
 ### Soal1
 1.	Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
 -	Filter menggunakan filter command ```http contains “testing.mekanis.me”```.
--	Ditemukan paket tersebut memiliki destination port 80, yang berarti menggunakan webserver dengan **port 80 (HTTP)**.
+-	Kemudian klik kanan, pilih ```Follow > TCP Stream```, dan dapat terlihat bahwa webserver yang digunakan adalah **nginx/1/14/0 (Ubuntu)**, dengan destination port 80 (HTTP).
+
+![image](https://user-images.githubusercontent.com/48936125/95944718-0d957c00-0e13-11eb-9b10-abdc716069ae.png)
 
 ![image](https://user-images.githubusercontent.com/48936125/95887559-30d81100-0daa-11eb-822f-78e0a6e2a755.png)
+
 #
 
 ### Soal2
