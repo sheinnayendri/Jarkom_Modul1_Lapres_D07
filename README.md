@@ -1,4 +1,4 @@
-# Jarkom_Modul1_Praktikum_D07
+# Jarkom_Modul1_Lapres_D07
 Laporan Resmi Modul 1 Praktikum Jaringan Komputer
 #
 1. Naufal Adam Kuncoro (05111740000155)
