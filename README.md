@@ -66,6 +66,18 @@ Gambar **Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg**:
 
 ### Soal5
 5.	Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
+- Pertama-tama melakukan filter command ```ip.dst == 157.245.50.224``` yang merupakan IP Address dari host **aku.pengen.pw**.
+
+![5-2](https://user-images.githubusercontent.com/48936125/96234144-3fe5db80-0fc3-11eb-8d01-4e8db99760c7.jpg)
+
+- Kemudian klik paket yang memiliki info ```GET```, dan ditemukan pada bagian ```Credential```, username dan password:
+- Username: **kakakgamtenk**
+- Password: **hartatahtabermuda**
+
+
+![5-3](https://user-images.githubusercontent.com/48936125/96234146-41170880-0fc3-11eb-82d0-679f0d742730.jpg)
+
+![5-1](https://user-images.githubusercontent.com/48936125/96234141-3e1c1800-0fc3-11eb-9189-030df777afcb.jpg)
 #
 
 ### Soal6
