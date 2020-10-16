@@ -32,6 +32,9 @@ Laporan Resmi Modul 1 Praktikum Jaringan Komputer
 
 ![image](https://user-images.githubusercontent.com/48936125/95887559-30d81100-0daa-11eb-822f-78e0a6e2a755.png)
 
+- Dapat lebih spesifik dengan ```http.host == "testing.mekanis.me"
+
+![image](https://user-images.githubusercontent.com/48936125/96250135-901b6880-0fd8-11eb-8469-6aa331c7ae7c.png)
 #
 
 ### Soal2
@@ -55,6 +58,10 @@ Gambar **Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg**:
 -	Password: **guncangdunia**
 
 ![image](https://user-images.githubusercontent.com/48936125/95887950-aa6fff00-0daa-11eb-96c8-ec42646d5e6d.png)
+
+- Dapat lebih spesifik dengan ```http.host == "ppid.dpr.go.id" && http.request.method == "POST" && http.request.uri contains "login"```
+
+![image](https://user-images.githubusercontent.com/48936125/96250216-b0e3be00-0fd8-11eb-9b6e-ba238972e1bf.png)
 #
 
 ### Soal4
@@ -62,6 +69,10 @@ Gambar **Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg**:
 -	Host: ```aku.pengen.pw``` merupakan web yang menggunakan basic authentication method.
 
 ![image](https://user-images.githubusercontent.com/48936125/95888181-f6bb3f00-0daa-11eb-8839-c7dd76f6ed8f.png)
+
+- Command seharusnya: ```http.authbasic```
+
+![image](https://user-images.githubusercontent.com/48936125/96250280-ce188c80-0fd8-11eb-9a56-b4b10cc96897.png)
 #
 
 ### Soal5
@@ -102,6 +113,12 @@ Gambar **Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg**:
 - Dan akhirnya dapat membuka file PDF yang diinginkan yaitu **Open This.pdf**.
 
 ![image](https://user-images.githubusercontent.com/48936125/95888969-04bd8f80-0dac-11eb-982d-af0eb85948b6.png)
+
+- Command dapat lebih spesifik ```ftp-data.command contains "Answer.zip"``` untuk mencari file ZIP dan melakukan download, serta command ```ftp-data.command contains "zipkey.txt"``` untuk mencari file text password dari file ZIP tadi.
+
+![image](https://user-images.githubusercontent.com/48936125/96251199-4d5a9000-0fda-11eb-80fc-b42bd28826c4.png)
+
+![image](https://user-images.githubusercontent.com/48936125/96251230-59dee880-0fda-11eb-96ed-1a4564f399d1.png)
 #
 
 ### Soal7
@@ -115,6 +132,10 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 -	Kemudian dapat di-unzip dan muncul file **Yes.pdf**, dibuka dan hasil seperti pada screenshot.
 
 ![image](https://user-images.githubusercontent.com/48936125/95889427-962d0180-0dac-11eb-9e3b-2f61d34bd3db.png)
+
+- Command dapat lebih spesifik: ```ftp-data contains "Yes.pdf"```.
+
+![image](https://user-images.githubusercontent.com/48936125/96251333-7bd86b00-0fda-11eb-89c9-28a690f0b483.png)
 #
 
 ### Soal8
@@ -122,6 +143,10 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 -	Objek yang didownload dari koneksi FTP adalah file **Readme** dan file **text (.txt)**.
 
 ![image](https://user-images.githubusercontent.com/48936125/95889626-d42a2580-0dac-11eb-84c9-698ddb49b63f.png)
+
+- Command dapat menjadi lebih spesifik: ```(ftp contains "Microsoft FTP Service" || ftp.request.command contains "RETR") && ip.src == 192.168.0.128```.
+
+![image](https://user-images.githubusercontent.com/48936125/96251379-90b4fe80-0fda-11eb-8345-cb9a42b63f09.png)
 #
 
 ### Soal9
@@ -136,6 +161,10 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 2.	Password: **dhana123**
 
 ![image](https://user-images.githubusercontent.com/48936125/95889730-ff147980-0dac-11eb-9c6b-dc81b118e34a.png)
+
+- Command dapat menjadi lebih spesifik: ```ftp.request.command == "USER" || ftp.request.command == "PASS"```.
+
+![image](https://user-images.githubusercontent.com/48936125/96251485-bfcb7000-0fda-11eb-8bb4-e5e7aaebe413.png)
 #
 
 ### Soal10
@@ -180,18 +209,15 @@ clue: "25 50 44 46"
 
 ### Soal14
 14.	Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
--	Untuk mencari ip kami, menggunakan command prompt, kemudian mengetikkan command ```ip config```. Dari situ, kami temukan bahwa ip kami adalah ```192.168.1.106```.
--	Sehingga untuk mengambil paket yang berasal dari ip kami, menggunakan filter command ```ip.src == 192.168.1.106```.
+-	Untuk mencari ip kami, menggunakan command prompt, kemudian mengetikkan command ```ipconfig```. Dari situ, kami temukan bahwa ip kami adalah ```192.168.1.107```.
+-	Sehingga untuk mengambil paket yang berasal dari ip kami, menggunakan capture filter: ```ip src 192.168.1.107```.
 
-![image](https://user-images.githubusercontent.com/48936125/95892067-2456b700-0db0-11eb-8c8c-ab1fe5735677.png)
+![image](https://user-images.githubusercontent.com/48936125/96251827-3b2d2180-0fdb-11eb-8011-07af4ba07a57.png)
 #
 
 ### Soal15
 15.	Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
--	Pertama-tama untuk mencari IP addres monta.if.its.ac.id, kami menggunakan filter command ```http contains “monta.if.its.ac.id”```, dan ditemukan IP address-nya adalah ```103.94.190.11```.
--	Kemudian untuk mengambil paket yang tujuannya ke monta.if.its.ac.id, kami menggunakan filter command ```ip.dst == 103.94.190.11```, di mana IP address tersebut merupakan IP address monta.if.its.ac.id yang tadi kami cari.
+-	Menggunakan capture filter: ```dst host monta.if.its.ac.id```.
 
-![image](https://user-images.githubusercontent.com/48936125/95892175-4f410b00-0db0-11eb-9bde-f92c0c4383c2.png)
-
-![image](https://user-images.githubusercontent.com/48936125/95892178-510ace80-0db0-11eb-86aa-9d7d1050195e.png)
+![image](https://user-images.githubusercontent.com/48936125/96252023-821b1700-0fdb-11eb-83c6-1eb7a675d2c0.png)
 #
