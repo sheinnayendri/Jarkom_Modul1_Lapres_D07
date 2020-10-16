@@ -32,7 +32,7 @@ Laporan Resmi Modul 1 Praktikum Jaringan Komputer
 
 ![image](https://user-images.githubusercontent.com/48936125/95887559-30d81100-0daa-11eb-822f-78e0a6e2a755.png)
 
-- Dapat lebih spesifik dengan ```http.host == "testing.mekanis.me"
+- Dapat lebih spesifik dengan ```http.host == "testing.mekanis.me"```
 
 ![image](https://user-images.githubusercontent.com/48936125/96250135-901b6880-0fd8-11eb-8469-6aa331c7ae7c.png)
 #
@@ -84,7 +84,6 @@ Gambar **Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg**:
 - Kemudian klik paket yang memiliki info ```GET```, dan ditemukan pada bagian ```Credential```, username dan password:
 - Username: **kakakgamtenk**
 - Password: **hartatahtabermuda**
-
 
 ![5-3](https://user-images.githubusercontent.com/48936125/96234146-41170880-0fc3-11eb-82d0-679f0d742730.jpg)
 
